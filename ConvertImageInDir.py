@@ -8,13 +8,13 @@ import os
 import PIL.Image as Image
 import json
 
-projectDir = '/Users/justdoitge/Desktop/Work/WOZAIIOT/iOS/Customer/AlaazSmartHome/AlaazSmartHome/Resources/Assets.xcassets'
+projectDir = '/Users/../Resources/Assets.xcassets'
 # 屏蔽的文件夹
 # 子文件夹 向这些文件夹中添加垃圾类
-ignoreDirs = ['AppIcon', "welcome_splash"]
+ignoreDirs = ['AppIcon.appiconset', "welcome_splash.imageset"]
 
 # 所有图片添加的前缀，包括在json文件中filename添加的前缀
-prefix = 'AL_'
+prefix = 'Prefix_'
 
 # 图片压缩比例
 quality = 90

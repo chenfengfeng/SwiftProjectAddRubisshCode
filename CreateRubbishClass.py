@@ -15,8 +15,6 @@ import string
 # 属性类型
 classArray = ['UIColor', 'UILabel', 'UITableView', 'UISlider', 'UIScrollView', 'UIView', 'UIButton']
 
-#垃圾文件夹
-rubbishFile = 'NewRubCode'
 
 # 创建swift 文件
 def createSwift(fileNmae, propertyNumber, methodArray):
@@ -55,7 +53,7 @@ def createSwift(fileNmae, propertyNumber, methodArray):
 # 获取创建的文件目录
 def createFileDir():
     # 工程目录
-    projectDir = '/Users/justdoitge/Desktop/Work/WOZAIIOT/iOS/Customer/AlaazSmartHome/AlaazSmartHome'
+    projectDir = '/Users/../Project'
     # 子文件夹 向这些文件夹中添加垃圾类
     subDirs = ['AddDevice', "Alarm", "Device", 'DeviceList', "Home", "Login", "Mine", "Smart"]
     i = random.randint(1, 15)

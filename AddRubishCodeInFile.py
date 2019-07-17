@@ -85,14 +85,14 @@ def addRubbish():
     # 每个文件中添加的代码数量
     codeCount = 5
     # 主工程目录
-    file_prefix = '/Users/justdoitge/Desktop/Work/WOZAIIOT/iOS/Customer/AlaazSmartHome/AlaazSmartHome/'
+    projectDir = '/Users/../Project/'
     # 要添加垃圾代码文件所在的文件夹路径
-    file_dirs = ['AddDevice', "Alarm", "Device", 'DeviceList', "Home", "Login", "Mine", "Smart"]
+    subDirs = ['AddDevice', "Alarm", "Device", 'DeviceList', "Home", "Login", "Mine", "Smart"]
     # 全局替换的关键字符串
     global keyStr
     keyStr = 'static func createInstance('
-    for dir in file_dirs:
-        file_dir = file_prefix + dir
+    for dir in subDirs:
+        file_dir = projectDir + dir
         traverse(file_dir)
 
 def main():
